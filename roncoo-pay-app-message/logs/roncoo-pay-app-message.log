@@ -1,0 +1,330 @@
+[INFO ][20180519 17:38:06,386][AbstractApplicationContext:515] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@61064425: startup date [Sat May 19 17:38:06 CST 2018]; root of context hierarchy
+[INFO ][20180519 17:38:06,431][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20180519 17:38:06,724][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [spring-dubbo-consumer.xml]
+[INFO ][20180519 17:38:06,756][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20180519 17:38:06,954][PropertiesLoaderSupport:172] Loading properties file from class path resource [public_system.properties]
+[INFO ][20180519 17:38:06,955][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq_config.properties]
+[INFO ][20180519 17:38:06,959][AutowiredAnnotationBeanPostProcessor:141] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO ][20180519 17:38:06,994][DefaultListableBeanFactory:603] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4ba2ca36: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,messageBiz,messageScheduled,propertyConfigurer,org.springframework.aop.config.internalAutoProxyCreator,threadPool,roncoo-pay-app-message,com.alibaba.dubbo.config.RegistryConfig,rpTransactionMessageService,rpTradePaymentQueryService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20180519 17:38:07,282][AbstractRegistry:232]  [DUBBO] Load registry store file C:\Users\kider\.dubbo\dubbo-registry-172.16.0.50.cache, data: {com.roncoo.pay.service.user.api.RpPayWayService=empty://172.20.213.81:20887/com.roncoo.pay.service.user.api.RpPayWayService?anyhost=true&application=roncoo-pay-service-user&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.user.api.RpPayWayService&methods=listByProductCode,createPayWay,getByPayWayTypeCode,updateData,getDataById,saveData,listAll,listPage&pid=14492&retries=0&side=provider&timestamp=1526722570845, com.roncoo.pay.service.account.api.RpAccountHistoryService=empty://172.20.213.81:20881/com.roncoo.pay.service.account.api.RpAccountHistoryService?anyhost=true&application=roncoo-pay-service-account&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.account.api.RpAccountHistoryService&methods=updateData,getDataById,saveData,listPage&pid=8528&retries=0&side=provider&timestamp=1526721368381, com.roncoo.pay.service.account.api.RpAccountTransactionService=empty://172.20.213.81/com.roncoo.pay.service.account.api.RpAccountTransactionService?application=roncoo-pay-service-trade&category=configurators&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.account.api.RpAccountTransactionService&methods=creditToAccount,freezeAmount,unFreezeAmount,settCollectSuccess,debitToAccount,unFreezeSettAmount&pid=8880&side=consumer&timestamp=1526722417226 empty://172.20.213.81/com.roncoo.pay.service.account.api.RpAccountTransactionService?application=roncoo-pay-service-trade&category=routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.account.api.RpAccountTransactionService&methods=creditToAccount,freezeAmount,unFreezeAmount,settCollectSuccess,debitToAccount,unFreezeSettAmount&pid=8880&side=consumer&timestamp=1526722417226 dubbo://172.20.213.81:20881/com.roncoo.pay.service.account.api.RpAccountTransactionService?anyhost=true&application=roncoo-pay-service-account&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.account.api.RpAccountTransactionService&methods=creditToAccount,freezeAmount,unFreezeAmount,settCollectSuccess,debitToAccount,unFreezeSettAmount&pid=8528&retries=0&side=provider&timestamp=1526721368036, com.roncoo.pay.service.notify.aip.RpNotifyService=empty://172.20.213.81:20883/com.roncoo.pay.service.notify.aip.RpNotifyService?anyhost=true&application=roncoo-pay-service-notify&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.notify.aip.RpNotifyService&methods=notifySend,createNotifyRecord,createNotifyRecordLog,updateNotifyRecord,getNotifyByMerchantNoAndMerchantOrderNoAndNotifyType,queryNotifyRecordListPage,getNotifyRecordById&pid=12108&retries=0&side=provider&timestamp=1526721622813, com.roncoo.pay.service.user.api.RpUserPayInfoService=empty://172.20.213.81:20887/com.roncoo.pay.service.user.api.RpUserPayInfoService?anyhost=true&application=roncoo-pay-service-user&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.user.api.RpUserPayInfoService&methods=updateData,getByUserNo,getDataById,saveData,listPage&pid=14492&retries=0&side=provider&timestamp=1526722573623, com.roncoo.pay.service.user.api.RpPayProductService=empty://172.20.213.81:20887/com.roncoo.pay.service.user.api.RpPayProductService?anyhost=true&application=roncoo-pay-service-user&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.user.api.RpPayProductService&methods=createPayProduct,updateData,audit,getByProductCode,getDataById,saveData,listAll,listPage,deletePayProduct&pid=14492&retries=0&side=provider&timestamp=1526722570443, com.roncoo.pay.service.trade.api.RpTradePaymentQueryService=empty://172.20.213.81:20886/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?anyhost=true&application=roncoo-pay-service-trade&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=8880&retries=0&side=provider&timestamp=1526722418998, com.roncoo.pay.service.account.api.RpAccountQueryService=empty://172.20.213.81:20881/com.roncoo.pay.service.account.api.RpAccountQueryService?anyhost=true&application=roncoo-pay-service-account&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.account.api.RpAccountQueryService&methods=queryAccountHistoryListPage,getAccountByAccountNo,queryAccountHistoryListPageByRole,queryAccountListPage,getAccountByUserNo,listDailyCollectAccountHistoryVo,listAll,getAccountHistoryByAccountNo_requestNo_trxType&pid=8528&retries=0&side=provider&timestamp=1526721367701, com.roncoo.pay.service.accounting.api.RpAccountingVoucherService=empty://172.20.213.81/com.roncoo.pay.service.accounting.api.RpAccountingVoucherService?application=roncoo-pay-app-queue&category=configurators&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.accounting.api.RpAccountingVoucherService&methods=getAccountingVoucherByRequestNo,getBy,getMapBy,updateAccountingVoucher,createAccountingVoucher,listPage&pid=12956&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722649787 empty://172.20.213.81/com.roncoo.pay.service.accounting.api.RpAccountingVoucherService?application=roncoo-pay-app-queue&category=routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.accounting.api.RpAccountingVoucherService&methods=getAccountingVoucherByRequestNo,getBy,getMapBy,updateAccountingVoucher,createAccountingVoucher,listPage&pid=12956&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722649787 dubbo://172.20.213.81:20882/com.roncoo.pay.service.accounting.api.RpAccountingVoucherService?anyhost=true&application=roncoo-pay-service-accounting&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.accounting.api.RpAccountingVoucherService&methods=getAccountingVoucherByRequestNo,getBy,getMapBy,updateAccountingVoucher,createAccountingVoucher,listPage&pid=6984&retries=0&side=provider&timestamp=1526721334460, com.roncoo.pay.service.message.api.RpTransactionMessageService=empty://172.20.213.81/com.roncoo.pay.service.message.api.RpTransactionMessageService?application=roncoo-pay-app-queue&category=configurators&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendMessageByMessageId,reSendAllDeadMessageByQueueName,reSendMessage,deleteMessageByMessageId,directSendMessage,saveMessageWaitingConfirm,setMessageToAreadlyDead,getMessageByMessageId,listPage&pid=12956&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722649028 empty://172.20.213.81/com.roncoo.pay.service.message.api.RpTransactionMessageService?application=roncoo-pay-app-queue&category=routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendMessageByMessageId,reSendAllDeadMessageByQueueName,reSendMessage,deleteMessageByMessageId,directSendMessage,saveMessageWaitingConfirm,setMessageToAreadlyDead,getMessageByMessageId,listPage&pid=12956&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722649028 dubbo://172.20.213.81:20888/com.roncoo.pay.service.message.api.RpTransactionMessageService?anyhost=true&application=roncoo-pay-service-message&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendMessageByMessageId,reSendAllDeadMessageByQueueName,deleteMessageByMessageId,reSendMessage,directSendMessage,saveMessageWaitingConfirm,setMessageToAreadlyDead,getMessageByMessageId,listPage&pid=2948&retries=0&side=provider&timestamp=1526721790657, com.roncoo.pay.service.user.api.RpUserPayConfigService=empty://172.20.213.81:20887/com.roncoo.pay.service.user.api.RpUserPayConfigService?anyhost=true&application=roncoo-pay-service-user&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.user.api.RpUserPayConfigService&methods=listByProductCode,updateData,getDataById,saveData,updateUserPayConfig,deleteUserPayConfig,audit,getByPayKey,getByUserNo,createUserPayConfig,listPage&pid=14492&retries=0&side=provider&timestamp=1526722572388, com.roncoo.pay.service.user.api.RpUserInfoService=empty://172.20.213.81:20887/com.roncoo.pay.service.user.api.RpUserInfoService?anyhost=true&application=roncoo-pay-service-user&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.user.api.RpUserInfoService&methods=getDataByMerchentNo,updateData,getDataById,saveData,listAll,listPage,registerOffline&pid=14492&retries=0&side=provider&timestamp=1526722571637, com.roncoo.pay.service.trade.api.RpTradePaymentManagerService=empty://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentManagerService?application=roncoo-pay-app-queue&category=configurators&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentManagerService&methods=completeScanPayByResult,completeScanPay,initDirectScanPay,initNonDirectScanPay,getMerchantNotifyMessage,completeTestPay,verifyNotify,toNonDirectScanPay&pid=12956&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722648040 empty://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentManagerService?application=roncoo-pay-app-queue&category=routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentManagerService&methods=completeScanPayByResult,completeScanPay,initDirectScanPay,initNonDirectScanPay,getMerchantNotifyMessage,completeTestPay,verifyNotify,toNonDirectScanPay&pid=12956&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722648040 empty://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentManagerService?application=roncoo-pay-app-queue&category=providers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentManagerService&methods=completeScanPayByResult,completeScanPay,initDirectScanPay,initNonDirectScanPay,getMerchantNotifyMessage,completeTestPay,verifyNotify,toNonDirectScanPay&pid=12956&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722648040, com.roncoo.pay.service.account.api.RpAccountService=empty://172.20.213.81/com.roncoo.pay.service.account.api.RpAccountService?application=roncoo-pay-service-user&category=configurators&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.account.api.RpAccountService&methods=updateData,getDataById,saveData,listPage&pid=14492&side=consumer&timestamp=1526722569167 empty://172.20.213.81/com.roncoo.pay.service.account.api.RpAccountService?application=roncoo-pay-service-user&category=routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.account.api.RpAccountService&methods=updateData,getDataById,saveData,listPage&pid=14492&side=consumer&timestamp=1526722569167 dubbo://172.20.213.81:20881/com.roncoo.pay.service.account.api.RpAccountService?anyhost=true&application=roncoo-pay-service-account&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.account.api.RpAccountService&methods=updateData,getDataById,saveData,listPage&pid=8528&retries=0&side=provider&timestamp=1526721366876}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20180519 17:38:07,316][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20180519 17:38:07,317][Environment:100] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+[INFO ][20180519 17:38:07,318][Environment:100] Client environment:host.name=CH.mshome.net
+[INFO ][20180519 17:38:07,318][Environment:100] Client environment:java.version=1.8.0_161
+[INFO ][20180519 17:38:07,318][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20180519 17:38:07,318][Environment:100] Client environment:java.home=D:\Program Files\Java\jdk1.8.0_161\jre
+[INFO ][20180519 17:38:07,319][Environment:100] Client environment:java.class.path=D:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\deploy.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\access-bridge-64.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\cldrdata.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\dnsns.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jaccess.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jfxrt.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\localedata.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\nashorn.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunec.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunjce_provider.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunmscapi.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunpkcs11.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\zipfs.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\javaws.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\jfxswt.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\management-agent.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\plugin.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;D:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;F:\IdeaWorkspace\roncoo-pay-app-message\target\classes;D:\Maven\repo\com\roncoo\pay\common\roncoo-pay-common-core\0.1-SNAPSHOT\roncoo-pay-common-core-0.1-SNAPSHOT.jar;D:\Maven\repo\org\springframework\spring-core\3.2.17.RELEASE\spring-core-3.2.17.RELEASE.jar;D:\Maven\repo\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\Maven\repo\org\springframework\spring-aop\3.2.17.RELEASE\spring-aop-3.2.17.RELEASE.jar;D:\Maven\repo\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Maven\repo\org\springframework\spring-aspects\3.2.17.RELEASE\spring-aspects-3.2.17.RELEASE.jar;D:\Maven\repo\org\aspectj\aspectjweaver\1.8.9\aspectjweaver-1.8.9.jar;D:\Maven\repo\org\springframework\spring-beans\3.2.17.RELEASE\spring-beans-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-context\3.2.17.RELEASE\spring-context-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-context-support\3.2.17.RELEASE\spring-context-support-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-expression\3.2.17.RELEASE\spring-expression-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-instrument\3.2.17.RELEASE\spring-instrument-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-instrument-tomcat\3.2.17.RELEASE\spring-instrument-tomcat-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-jdbc\3.2.17.RELEASE\spring-jdbc-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-jms\3.2.17.RELEASE\spring-jms-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-orm\3.2.17.RELEASE\spring-orm-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-oxm\3.2.17.RELEASE\spring-oxm-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-tx\3.2.17.RELEASE\spring-tx-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-web\3.2.17.RELEASE\spring-web-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-webmvc\3.2.17.RELEASE\spring-webmvc-3.2.17.RELEASE.jar;D:\Maven\repo\org\springframework\spring-webmvc-portlet\3.2.17.RELEASE\spring-webmvc-portlet-3.2.17.RELEASE.jar;D:\Maven\repo\org\mybatis\mybatis\3.4.0\mybatis-3.4.0.jar;D:\Maven\repo\org\mybatis\mybatis-spring\1.3.0\mybatis-spring-1.3.0.jar;D:\Maven\repo\org\apache\shiro\shiro-core\1.2.5\shiro-core-1.2.5.jar;D:\Maven\repo\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;D:\Maven\repo\org\slf4j\slf4j-api\1.7.21\slf4j-api-1.7.21.jar;D:\Maven\repo\org\slf4j\slf4j-log4j12\1.7.21\slf4j-log4j12-1.7.21.jar;D:\Maven\repo\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Maven\repo\mysql\mysql-connector-java\8.0.11\mysql-connector-java-8.0.11.jar;D:\Maven\repo\com\google\protobuf\protobuf-java\2.6.0\protobuf-java-2.6.0.jar;D:\Maven\repo\javax\javaee-api\7.0\javaee-api-7.0.jar;D:\Maven\repo\com\sun\mail\javax.mail\1.5.0\javax.mail-1.5.0.jar;D:\Maven\repo\javax\activation\activation\1.1\activation-1.1.jar;D:\Maven\repo\cglib\cglib\3.2.2\cglib-3.2.2.jar;D:\Maven\repo\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;D:\Maven\repo\org\apache\ant\ant\1.9.6\ant-1.9.6.jar;D:\Maven\repo\org\apache\ant\ant-launcher\1.9.6\ant-launcher-1.9.6.jar;D:\Maven\repo\jstl\jstl\1.2\jstl-1.2.jar;D:\Maven\repo\com\alibaba\druid\1.0.20\druid-1.0.20.jar;D:\Program Files\Java\jdk1.8.0_161\lib\jconsole.jar;D:\Program Files\Java\jdk1.8.0_161\lib\tools.jar;D:\Maven\repo\com\alibaba\fastjson\1.2.11\fastjson-1.2.11.jar;D:\Maven\repo\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;D:\Maven\repo\commons-io\commons-io\2.5\commons-io-2.5.jar;D:\Maven\repo\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;D:\Maven\repo\org\jdom\jdom\2.0.2\jdom-2.0.2.jar;D:\Maven\repo\org\apache\activemq\activemq-pool\5.15.3\activemq-pool-5.15.3.jar;D:\Maven\repo\org\apache\activemq\activemq-jms-pool\5.15.3\activemq-jms-pool-5.15.3.jar;D:\Maven\repo\org\apache\geronimo\specs\geronimo-jms_1.1_spec\1.1.1\geronimo-jms_1.1_spec-1.1.1.jar;D:\Maven\repo\org\apache\activemq\activemq-client\5.15.3\activemq-client-5.15.3.jar;D:\Maven\repo\org\fusesource\hawtbuf\hawtbuf\1.11\hawtbuf-1.11.jar;D:\Maven\repo\org\apache\geronimo\specs\geronimo-j2ee-management_1.1_spec\1.0.1\geronimo-j2ee-management_1.1_spec-1.0.1.jar;D:\Maven\repo\org\apache\geronimo\specs\geronimo-jta_1.0.1B_spec\1.0.1\geronimo-jta_1.0.1B_spec-1.0.1.jar;D:\Maven\repo\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;D:\Maven\repo\commons-pool\commons-pool\1.6\commons-pool-1.6.jar;D:\Maven\repo\jaxen\jaxen\1.1.6\jaxen-1.1.6.jar;D:\Maven\repo\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;D:\Maven\repo\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;D:\Maven\repo\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;D:\Maven\repo\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;D:\Maven\repo\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;D:\Maven\repo\jline\jline\0.9.94\jline-0.9.94.jar;D:\Maven\repo\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;D:\Maven\repo\com\101tec\zkclient\0.4\zkclient-0.4.jar;D:\Maven\repo\com\roncoo\pay\common\roncoo-pay-common-config\0.1-SNAPSHOT\roncoo-pay-common-config-0.1-SNAPSHOT.jar;D:\Maven\repo\com\roncoo\pay\facade\roncoo-pay-service-message-api\0.1-SNAPSHOT\roncoo-pay-service-message-api-0.1-SNAPSHOT.jar;D:\Maven\repo\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\Maven\repo\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;D:\Maven\repo\com\roncoo\pay\facade\roncoo-pay-service-trade-api\0.1-SNAPSHOT\roncoo-pay-service-trade-api-0.1-SNAPSHOT.jar;D:\ideaIU-2018.1.1.win\lib\idea_rt.jar
+[INFO ][20180519 17:38:07,320][Environment:100] Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.8.0_161\bin;D:\Maven\apache-maven-3.5.3\bin;D:\Program Files\Git\cmd;C:\Users\kider\AppData\Local\Microsoft\WindowsApps;;.
+[INFO ][20180519 17:38:07,321][Environment:100] Client environment:java.io.tmpdir=C:\Users\kider\AppData\Local\Temp\
+[INFO ][20180519 17:38:07,321][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20180519 17:38:07,321][Environment:100] Client environment:os.name=Windows 10
+[INFO ][20180519 17:38:07,321][Environment:100] Client environment:os.arch=amd64
+[INFO ][20180519 17:38:07,321][Environment:100] Client environment:os.version=10.0
+[INFO ][20180519 17:38:07,321][Environment:100] Client environment:user.name=kider
+[INFO ][20180519 17:38:07,322][Environment:100] Client environment:user.home=C:\Users\kider
+[INFO ][20180519 17:38:07,322][Environment:100] Client environment:user.dir=F:\IdeaWorkspace\roncoo-pay-app-message
+[INFO ][20180519 17:38:07,323][ZooKeeper:438] Initiating client connection, connectString=172.16.0.50:2181,172.16.0.50:2182,172.16.0.50:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@73e22a3d
+[INFO ][20180519 17:38:07,512][ClientCnxn$SendThread:975] Opening socket connection to server 172.16.0.50/172.16.0.50:2182. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20180519 17:38:07,514][ClientCnxn$SendThread:852] Socket connection established to 172.16.0.50/172.16.0.50:2182, initiating session
+[INFO ][20180519 17:38:07,825][ClientCnxn$SendThread:1235] Session establishment complete on server 172.16.0.50/172.16.0.50:2182, sessionid = 0x200004394140000, negotiated timeout = 30000
+[INFO ][20180519 17:38:07,828][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20180519 17:38:07,862][AbstractRegistry:302]  [DUBBO] Register: consumer://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=consumers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:08,076][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:08,512][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, urls: [empty://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=providers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, empty://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=configurators&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, empty://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211], dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:08,517][ReferenceConfig:423]  [DUBBO] Refer dubbo service com.roncoo.pay.service.trade.api.RpTradePaymentQueryService from url zookeeper://172.16.0.50:2181/com.alibaba.dubbo.registry.RegistryService?application=roncoo-pay-app-message&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:08,536][AbstractRegistry:302]  [DUBBO] Register: consumer://172.20.213.81/com.roncoo.pay.service.message.api.RpTransactionMessageService?application=roncoo-pay-app-message&category=consumers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendAllDeadMessageByQueueName,reSendMessageByMessageId,reSendMessage,deleteMessageByMessageId,directSendMessage,getMessageByMessageId,saveMessageWaitingConfirm,setMessageToAreadlyDead,listPage&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528, dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:08,689][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://172.20.213.81/com.roncoo.pay.service.message.api.RpTransactionMessageService?application=roncoo-pay-app-message&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendAllDeadMessageByQueueName,reSendMessageByMessageId,reSendMessage,deleteMessageByMessageId,directSendMessage,getMessageByMessageId,saveMessageWaitingConfirm,setMessageToAreadlyDead,listPage&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528, dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:09,069][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://172.20.213.81/com.roncoo.pay.service.message.api.RpTransactionMessageService?application=roncoo-pay-app-message&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendAllDeadMessageByQueueName,reSendMessageByMessageId,reSendMessage,deleteMessageByMessageId,directSendMessage,getMessageByMessageId,saveMessageWaitingConfirm,setMessageToAreadlyDead,listPage&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528, urls: [dubbo://172.20.213.81:20888/com.roncoo.pay.service.message.api.RpTransactionMessageService?anyhost=true&application=roncoo-pay-service-message&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendMessageByMessageId,reSendAllDeadMessageByQueueName,deleteMessageByMessageId,reSendMessage,directSendMessage,saveMessageWaitingConfirm,setMessageToAreadlyDead,getMessageByMessageId,listPage&pid=2948&retries=0&side=provider&timestamp=1526721790657, empty://172.20.213.81/com.roncoo.pay.service.message.api.RpTransactionMessageService?application=roncoo-pay-app-message&category=configurators&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendAllDeadMessageByQueueName,reSendMessageByMessageId,reSendMessage,deleteMessageByMessageId,directSendMessage,getMessageByMessageId,saveMessageWaitingConfirm,setMessageToAreadlyDead,listPage&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528, empty://172.20.213.81/com.roncoo.pay.service.message.api.RpTransactionMessageService?application=roncoo-pay-app-message&category=routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendAllDeadMessageByQueueName,reSendMessageByMessageId,reSendMessage,deleteMessageByMessageId,directSendMessage,getMessageByMessageId,saveMessageWaitingConfirm,setMessageToAreadlyDead,listPage&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528], dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:09,174][AbstractClient:287]  [DUBBO] Successed connect to server /172.20.213.81:20888 from NettyClient 172.20.213.81 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x35b74c5c, /172.20.213.81:49583 => /172.20.213.81:20888]], dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:09,175][AbstractClient:105]  [DUBBO] Start NettyClient CH/172.20.213.81 connect to the server /172.20.213.81:20888, dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:09,215][ReferenceConfig:423]  [DUBBO] Refer dubbo service com.roncoo.pay.service.message.api.RpTransactionMessageService from url zookeeper://172.16.0.50:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=roncoo-pay-app-message&check=false&default.accepts=1000&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendAllDeadMessageByQueueName,reSendMessageByMessageId,reSendMessage,deleteMessageByMessageId,directSendMessage,getMessageByMessageId,saveMessageWaitingConfirm,setMessageToAreadlyDead,listPage&pid=13968&retries=0&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528, dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:38:09,228][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20180519 17:38:09,231][MessageTask:42] 定时任务开始执行>>>
+[INFO ][20180519 17:38:09,232][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:38:09,233][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:38:09,234][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:38:09,235][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:38:09,427][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:38:09,427][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:38:09,427][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:38:09,427][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:38:09,427][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:38:09,427][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:39:09,427][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:39:09,427][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:39:09,428][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:39:09,428][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:39:09,442][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:39:09,443][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:39:09,443][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:39:09,443][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:39:09,444][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:39:09,444][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:40:09,443][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:40:09,443][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:40:09,445][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:40:09,445][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:40:09,457][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:40:09,457][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:40:09,457][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:40:09,457][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:40:09,457][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:40:09,458][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:41:09,458][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:41:09,458][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:41:09,458][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:41:09,459][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:41:09,477][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:41:09,478][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:41:09,478][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:41:09,479][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:41:09,478][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:41:09,479][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:42:09,480][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:42:09,481][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:42:09,481][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:42:09,481][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:42:09,504][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:42:09,504][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:42:09,504][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:42:09,505][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:42:09,504][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:42:09,505][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:43:09,505][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:43:09,505][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:43:09,506][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:43:09,506][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:43:09,524][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:43:09,524][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:43:09,524][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:43:09,525][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:43:09,524][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:43:09,527][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:44:09,526][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:44:09,527][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:44:09,527][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:44:09,528][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:44:09,547][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:44:09,548][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:44:09,548][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:44:09,548][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:44:09,549][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:44:09,550][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:45:01,858][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, urls: [dubbo://172.20.213.81:20886/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?anyhost=true&application=roncoo-pay-service-trade&default.accepts=1000&default.threadpool=fixed&default.threads=500&default.timeout=30000&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=14592&retries=0&side=provider&timestamp=1526723101153], dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:45:01,863][AbstractClient:287]  [DUBBO] Successed connect to server /172.20.213.81:20886 from NettyClient 172.20.213.81 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x26ad7287, /172.20.213.81:49926 => /172.20.213.81:20886]], dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:45:01,864][AbstractClient:105]  [DUBBO] Start NettyClient CH/172.20.213.81 connect to the server /172.20.213.81:20886, dubbo version: 2.5.3, current host: 172.20.213.81
+[INFO ][20180519 17:45:09,549][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:45:09,550][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:45:09,550][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:45:09,550][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:45:09,578][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:45:09,578][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:45:09,579][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:45:09,583][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:45:09,584][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:45:09,584][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:46:09,579][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:46:09,579][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:46:09,584][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:46:09,584][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:46:09,625][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:46:09,625][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:46:09,625][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:46:09,627][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:46:09,627][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:46:09,627][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:47:09,625][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:47:09,625][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:47:09,627][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:47:09,627][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:47:09,659][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:47:09,659][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:47:09,659][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:47:09,661][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:47:09,661][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:47:09,661][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:48:09,659][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:48:09,660][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:48:09,662][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:48:09,663][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:48:09,900][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:48:09,900][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:48:09,901][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:48:09,900][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:48:09,901][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:48:09,902][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:49:09,903][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:49:09,903][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:49:09,904][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:49:09,905][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:49:09,926][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:49:09,926][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:49:09,926][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:49:09,926][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:49:09,926][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:49:09,926][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:50:09,927][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:50:09,928][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:50:09,929][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:50:09,929][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:50:09,944][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:50:09,945][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:50:09,945][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:50:09,945][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:50:09,946][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:50:09,946][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:51:09,946][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:51:09,947][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:51:09,947][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:51:09,948][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:51:09,978][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:51:09,979][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:51:09,979][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:51:09,979][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:51:09,980][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:51:09,980][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:52:09,981][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:52:09,982][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:52:09,982][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:52:09,982][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:52:10,005][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:52:10,006][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:52:10,006][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:52:10,006][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:52:10,006][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:52:10,007][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:53:10,007][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:53:10,008][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:53:10,008][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:53:10,009][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:53:10,025][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:53:10,025][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:53:10,025][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:53:10,025][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:53:10,025][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:53:10,025][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:54:10,026][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:54:10,026][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:54:10,026][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:54:10,026][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:54:10,044][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:54:10,044][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:54:10,044][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:54:10,045][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:54:10,045][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:54:10,045][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:55:10,045][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:55:10,046][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:55:10,046][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:55:10,047][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:55:10,065][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:55:10,065][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:55:10,065][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:55:10,068][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:55:10,068][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:55:10,068][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:56:10,066][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:56:10,066][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:56:10,069][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:56:10,070][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:56:10,083][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:56:10,083][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:56:10,084][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:56:10,085][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:56:10,086][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:56:10,086][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:57:10,085][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:57:10,085][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:57:10,087][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:57:10,087][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:57:10,114][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:57:10,114][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:57:10,114][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:57:10,114][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:57:10,114][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:57:10,114][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:58:03,742][DubboProtocol$1:130]  [DUBBO] disconected from /172.20.213.81:20886,url:dubbo://172.20.213.81:20886/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?anyhost=true&application=roncoo-pay-app-message&check=false&codec=dubbo&default.accepts=1000&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&retries=0&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, dubbo version: 2.5.3, current host: 172.20.213.81
+[WARN ][20180519 17:58:05,204][AbstractClient$1:160]  [DUBBO] client reconnect to 172.20.213.81:20886 find error . url: dubbo://172.20.213.81:20886/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?anyhost=true&application=roncoo-pay-app-message&check=false&codec=dubbo&default.accepts=1000&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&retries=0&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, dubbo version: 2.5.3, current host: 172.20.213.81
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://172.20.213.81:20886/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?anyhost=true&application=roncoo-pay-app-message&check=false&codec=dubbo&default.accepts=1000&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&retries=0&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211) failed to connect to server /172.20.213.81:20886, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	... 3 more
+[INFO ][20180519 17:58:10,115][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:58:10,116][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:58:10,116][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:58:10,119][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:58:10,133][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:58:10,133][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:58:10,134][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:58:10,133][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:58:10,134][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:58:10,134][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 17:58:34,661][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211, urls: [empty://172.20.213.81/com.roncoo.pay.service.trade.api.RpTradePaymentQueryService?application=roncoo-pay-app-message&category=providers&check=false&dubbo=2.5.3&interface=com.roncoo.pay.service.trade.api.RpTradePaymentQueryService&methods=listPaymentRecord,listPaymentRecordPage,getPayResult,getRecordByBankOrderNo,listPaymentOrderPage,getRecordByTrxNo&pid=13968&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722687211], dubbo version: 2.5.3, current host: 172.20.213.81
+[WARN ][20180519 17:58:34,668][AbstractRegistry:221]  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\kider\.dubbo\dubbo-registry-172.16.0.50.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 172.20.213.81
+java.io.IOException: Can not lock the registry cache file C:\Users\kider\.dubbo\dubbo-registry-172.16.0.50.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ][20180519 17:58:34,673][AbstractRegistry:221]  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\kider\.dubbo\dubbo-registry-172.16.0.50.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 172.20.213.81
+java.io.IOException: Can not lock the registry cache file C:\Users\kider\.dubbo\dubbo-registry-172.16.0.50.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ][20180519 17:59:10,134][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 17:59:10,134][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 17:59:10,135][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:59:10,136][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 17:59:10,154][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:59:10,154][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 17:59:10,154][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 17:59:10,155][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 17:59:10,154][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 17:59:10,155][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 18:00:10,155][MessageTask$2:70] 执行(处理[SENDING]的消息)任务开始
+[INFO ][20180519 18:00:10,155][MessageTask$1:52] 执行(处理[waiting_confirm]状态的消息)任务开始
+[INFO ][20180519 18:00:10,156][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 18:00:10,156][MessageScheduledImpl:121] ==>pageNum:1, numPerPage:2000
+[INFO ][20180519 18:00:10,173][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 18:00:10,174][MessageScheduledImpl:125] ==>recordList is empty
+[INFO ][20180519 18:00:10,174][MessageTask$1:54] 执行(处理[waiting_confirm]状态的消息)任务结束
+[INFO ][20180519 18:00:10,174][MessageTask$1:57] [waiting_confirm]睡眠60秒
+[INFO ][20180519 18:00:10,174][MessageTask$2:72] 执行(处理[SENDING]的消息)任务结束
+[INFO ][20180519 18:00:10,174][MessageTask$2:74] [SENDING]睡眠60秒
+[INFO ][20180519 18:00:41,544][DubboProtocol$1:130]  [DUBBO] disconected from /172.20.213.81:20888,url:dubbo://172.20.213.81:20888/com.roncoo.pay.service.message.api.RpTransactionMessageService?anyhost=true&application=roncoo-pay-app-message&check=false&codec=dubbo&default.accepts=1000&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendMessageByMessageId,reSendAllDeadMessageByQueueName,deleteMessageByMessageId,reSendMessage,directSendMessage,saveMessageWaitingConfirm,setMessageToAreadlyDead,getMessageByMessageId,listPage&pid=13968&retries=0&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528, dubbo version: 2.5.3, current host: 172.20.213.81
+[WARN ][20180519 18:00:42,926][AbstractClient$1:160]  [DUBBO] client reconnect to 172.20.213.81:20888 find error . url: dubbo://172.20.213.81:20888/com.roncoo.pay.service.message.api.RpTransactionMessageService?anyhost=true&application=roncoo-pay-app-message&check=false&codec=dubbo&default.accepts=1000&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendMessageByMessageId,reSendAllDeadMessageByQueueName,deleteMessageByMessageId,reSendMessage,directSendMessage,saveMessageWaitingConfirm,setMessageToAreadlyDead,getMessageByMessageId,listPage&pid=13968&retries=0&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528, dubbo version: 2.5.3, current host: 172.20.213.81
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://172.20.213.81:20888/com.roncoo.pay.service.message.api.RpTransactionMessageService?anyhost=true&application=roncoo-pay-app-message&check=false&codec=dubbo&default.accepts=1000&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=com.roncoo.pay.service.message.api.RpTransactionMessageService&methods=confirmAndSendMessage,saveAndSendMessage,reSendMessageByMessageId,reSendAllDeadMessageByQueueName,deleteMessageByMessageId,reSendMessage,directSendMessage,saveMessageWaitingConfirm,setMessageToAreadlyDead,getMessageByMessageId,listPage&pid=13968&retries=0&revision=0.1-SNAPSHOT&side=consumer&timestamp=1526722688528) failed to connect to server /172.20.213.81:20888, error message is:Connection refused: no further information
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276)
+	... 3 more
