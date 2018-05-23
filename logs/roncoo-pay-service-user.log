@@ -1,6 +1,0 @@
-[INFO ][20180522 01:00:21,450][ClientCnxn$SendThread:1096] Client session timed out, have not heard from server in 20000ms for sessionid 0x100004393db0061, closing socket connection and attempting reconnect
-[INFO ][20180522 01:00:21,557][ZkClient:449] zookeeper state changed (Disconnected)
-[INFO ][20180522 01:00:23,103][ClientCnxn$SendThread:975] Opening socket connection to server 172.16.0.50/172.16.0.50:2181. Will not attempt to authenticate using SASL (unknown error)
-[INFO ][20180522 01:00:23,148][ClientCnxn$SendThread:852] Socket connection established to 172.16.0.50/172.16.0.50:2181, initiating session
-[INFO ][20180522 01:00:23,155][ClientCnxn$SendThread:1235] Session establishment complete on server 172.16.0.50/172.16.0.50:2181, sessionid = 0x100004393db0061, negotiated timeout = 30000
-[INFO ][20180522 01:00:23,156][ZkClient:449] zookeeper state changed (SyncConnected)
