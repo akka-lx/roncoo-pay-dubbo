@@ -11,10 +11,4 @@
 “可靠消息的最终一致性方案”、“TCC两阶段型方案”和“最大努力通知型方案”这3种柔性事务解决方案进行具体设计实现和详细讲解。
 
 教程样例项目中用到的技术及相应的环境：
-Dubbo、Spring、SpringMVC、MyBatis、Druid、JDK7（或JDK8）、MySQL5.6、Tomcat、ActiveMQ/RabbitMQ……
-
-
-
-
-前置课程《Dubbo视频教程（Dubbo项目实战）》
-http://www.roncoo.com/details/f614343765bc4aac8597c6d8b38f06fd
+Dubbo、Spring、SpringMVC、MyBatis、Druid、JDK8、MySQL8、Tomcat、ActiveMQ/RabbitMQ……
