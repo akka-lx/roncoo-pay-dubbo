@@ -24,6 +24,9 @@
 		<module>roncoo-pay-common-config</module>
 		
 		<!-- service-api -->
+		<module>tcc-transaction-api</module>
+		<module>tcc-transaction-core</module>
+		<module>tcc-transaction-spring</module>
 		<module>roncoo-pay-service-account-api</module>
 		<module>roncoo-pay-service-accounting-api</module>
 		<module>roncoo-pay-service-message-api</module>

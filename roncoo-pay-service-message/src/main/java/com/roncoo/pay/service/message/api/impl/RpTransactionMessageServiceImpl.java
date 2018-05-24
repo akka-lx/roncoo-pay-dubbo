@@ -139,7 +139,7 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 		if (StringUtil.isEmpty(message.getConsumerQueue())) {
 			throw new MessageBizException(MessageBizException.MESSAGE_CONSUMER_QUEUE_IS_NULL, "消息的消费队列不能为空 ");
 		}
-		
+
 		message.addSendTimes();
 		message.setEditTime(new Date());
 		rpTransactionMessageDao.update(message);

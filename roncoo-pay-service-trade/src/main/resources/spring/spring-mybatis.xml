@@ -22,7 +22,7 @@
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="clone">
 		<!-- 基本属性driverClassName、 url、user、password -->
-		<property name="driverClassName" value="${order.jdbc.driver}" />
+		<property name="driverClassName" value="${trade.jdbc.driver}" />
 		<property name="url" value="${trade.jdbc.url}" />
 		<property name="username" value="${trade.jdbc.username}" />
 		<property name="password" value="${trade.jdbc.password}" />

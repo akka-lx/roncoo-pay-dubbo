@@ -60,6 +60,12 @@ public class BankMessageListener implements SessionAwareMessageListener<Message>
 			LOG.info("strMessage1 bank:" + strMessage);
 			param = JSONObject.parseObject(strMessage, Map.class); // 这里转换成相应的对象还有问题
 
+			//测试bug
+			String out_trade_no = param.get("out_trade_no");
+			if("null".equals(out_trade_no)){
+				LOG.info("取参数out_trade_no出错了！！！！！"+out_trade_no);
+			}
+
 			BankMessageTask bankMessageTask = new BankMessageTask(param);
 			bankMessageTask.setBankMessageBiz(bankMessageBiz);
 
