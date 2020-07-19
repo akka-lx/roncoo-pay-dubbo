@@ -12,3 +12,7 @@
 
 教程样例项目中用到的技术及相应的环境：
 Dubbo、Spring、SpringMVC、MyBatis、Druid、JDK8、MySQL8、Tomcat、ActiveMQ/RabbitMQ……
+
+By LX：
+    接下来会精简项目，把业务逻辑弄得简单一点，把重心放到分布式事务解决方案上；
+    否则，业务逻辑复杂的话，得花很大的精力来梳理业务逻辑，从而增加了学习成本！
